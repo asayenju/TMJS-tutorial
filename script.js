@@ -62,6 +62,25 @@ while(i < 10) {
     i++;
 }
 
+// forEach() - Loops through array
+todos.forEach(function(todo, i, myTodos) {
+    console.log(`${i + 1}: ${todo.text}`);
+    console.log(myTodos);
+});
+  
+// map() - Loop through and create new array
+const todoTextArray = todos.map(function(todo) {
+    return todo.text;
+  });
+  
+console.log(todoTextArray);
+  
+// filter() - Returns array based on condition
+const todo1 = todos.filter(function(todo) {
+    // Return only todos where id is 1
+    return todo.id === 1; 
+});
+
 // Arrow functions
 const addNums = num1 => num1 + 5; //addNums is the function and the parameter is num1 and num1 + 5 is the return system which the arrows point to
 console.log(addNums(5)); //this should give 10 as output
@@ -142,3 +161,7 @@ function Person(firstName, lastName, dob) {
 //console.log(document.querySelectorAll('.item')); //selects all of the item class recommended
 //console.log(document.getElementsByClassName('item'));
 //console.log(documents.getElementsByTagName('li')); 
+
+//iterating through the items
+const items = document.querySelectorAll('.item');
+items.forEach((item) => console.log(item));
