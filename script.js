@@ -86,7 +86,7 @@ const addNums = num1 => num1 + 5; //addNums is the function and the parameter is
 console.log(addNums(5)); //this should give 10 as output
 
 // OOP
-
+/*
 // Constructor Function
 function Person(firstName, lastName, dob) {
     // Set object properties
@@ -128,8 +128,8 @@ function Person(firstName, lastName, dob) {
   console.log(typeof name); // Shows 'Object'
   const num = new Number(5);
   console.log(typeof num); // Shows 'Object'
-  
-  
+  */
+  /*
   // ES6 CLASSES
   class Person {
     constructor(firstName, lastName, dob) {
@@ -148,9 +148,9 @@ function Person(firstName, lastName, dob) {
       return `${this.firstName} ${this.lastName}`
     }
   }
-  
-  const person3 = new Person('John', 'Doe', '7-8-80');
-  console.log(person1.getBirthYear());
+  */
+  //const person3 = new Person('John', 'Doe', '7-8-80');
+  //console.log(person1.getBirthYear());
 
 // DOM for the html
 // single element
@@ -163,8 +163,8 @@ function Person(firstName, lastName, dob) {
 //console.log(documents.getElementsByTagName('li')); 
 
 //iterating through the items
-const items = document.querySelectorAll('.item');
-items.forEach((item) => console.log(item));
+//const items = document.querySelectorAll('.item');
+//items.forEach((item) => console.log(item));
 
 /*
 //Changing properties within the html file by js
@@ -176,4 +176,16 @@ ul.children[1].innerText = 'Brad'; //Brad added to second item
 ul.lastElementChild.innerHTML = '<h1>Hello</h1>'; //Hello in h1 form added to third item
 const btn = document.querySelector('.btn');
 btn.style.background = 'red'; //changes button color
+*/
+
+/*
+//Changing properties with a click of button
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', (e) => {
+    e.preventDefault(); //it basically stops it from the return statement to be displayed briefly as it stays all along
+    console.log('click');
+    console.log(e.target); //we can get all the attributes by these
+    document.querySelector("#my-form").style.background = '#ccc'; // change color from grey to dark grey
+    document.querySelector('body').classList.add('bg-dark'); // added pre-existing class when clicked button
+});
 */
