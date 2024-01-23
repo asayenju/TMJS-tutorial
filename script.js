@@ -61,3 +61,7 @@ while(i < 10) {
     console.log(`While loop number: ${i}`);
     i++;
 }
+
+// Arrow functions
+const addNums = num1 => num1 + 5; //addNums is the function and the parameter is num1 and num1 + 5 is the return system which the arrows point to
+console.log(addNums(5)); //this should give 10 as output
