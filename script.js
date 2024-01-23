@@ -54,3 +54,10 @@ for(let i=0; i<= 10; i++) { //Difference between let and var is that let can onl
 for(let todo of todos) {
     console.log(todo);
 }
+
+// While loop
+let i = 0;
+while(i < 10) {
+    console.log(`While loop number: ${i}`);
+    i++;
+}
