@@ -133,4 +133,12 @@ function Person(firstName, lastName, dob) {
   const person3 = new Person('John', 'Doe', '7-8-80');
   console.log(person1.getBirthYear());
 
-  
+// DOM for the html
+// single element
+//const form = document.getElementById('my-form');
+//console.log(document.querySelector('.container')); //can use everything like tags, class and ids
+
+// multiple element
+//console.log(document.querySelectorAll('.item')); //selects all of the item class recommended
+//console.log(document.getElementsByClassName('item'));
+//console.log(documents.getElementsByTagName('li')); 
