@@ -165,3 +165,13 @@ function Person(firstName, lastName, dob) {
 //iterating through the items
 const items = document.querySelectorAll('.item');
 items.forEach((item) => console.log(item));
+
+//Changing properties within the html file by js
+const ul = document.querySelector('.items');
+//ul.remove(); //the whole list will be gone
+//ul.lastElementChild.remove() //remove last element child
+ul.firstElementChild.textContent = 'Hello'; //Hello added to first item
+ul.children[1].innerText = 'Brad'; //Brad added to second item
+ul.lastElementChild.innerHTML = '<h1>Hello</h1>'; //Hello in h1 form added to third item
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';
