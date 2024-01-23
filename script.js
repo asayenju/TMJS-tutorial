@@ -49,3 +49,8 @@ for(let i=0; i<= 10; i++) { //Difference between let and var is that let can onl
     console.log(`For Loop number: ${i}`)
 
 }
+
+// for of loop
+for(let todo of todos) {
+    console.log(todo);
+}
