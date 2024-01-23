@@ -43,3 +43,9 @@ const todos = [
 ];
 
 //console.log(todos[1].text); it prints out the text in id 2 which is Meeting with boss
+
+// For loop
+for(let i=0; i<= 10; i++) { //Difference between let and var is that let can only change inside the function and remains unchanged outside the function whereas var changes outside the block
+    console.log(`For Loop number: ${i}`)
+
+}
